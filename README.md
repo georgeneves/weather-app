@@ -6,7 +6,7 @@ https://openweathermap.org/api/one-call-api
 
 ## Appearance
 
-
+![length prompt](assets/images/weather.png)
 
 ## Built with
 * HTML
