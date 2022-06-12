@@ -8,10 +8,12 @@ var historyEl = document.getElementById('history');
 var fore5Header = document.getElementById('header5');
 var searchHistory = JSON.parse(localStorage.getItem('search')) || [];
 
+// hide elements before search
 mainBorder.style.display = 'none';
 
 var getWeather = function() {
 
+    //display border after search displays
     mainBorder.style.display = 'block';
 
     var cityName = document.getElementById('locationSearch').value;
@@ -44,7 +46,7 @@ var getWeather = function() {
 
         var humidity = document.createElement('p');
         humidity.textContent = 'Humidity: ' + data.main.humidity + "%";
-        mainWeather.appendChild(humidty);
+        mainWeather.appendChild(humidity);
 
         var lat = data.coord.lat;
         var lon = data.coord.lon;
@@ -63,8 +65,8 @@ var getWeather = function() {
             }
             console.log(data.current.uvi);
             uvIndex.innerHTML = data.current.uvi;
-            currentUvE1.innerHTML = "UV Index: ";
-            currentUvE1.append(uvIndex);
+            currentUvEl.innerHTML = "UV Index: ";
+            currentUvEl.append(uvIndex);
             if (data.current.uvi > 2 && data.current.uvi < 5) {
                 uvIndex.setAttribute("class", "w-1/3 bg-yellow-100 text-yellow-800 text-md font-semibold mt-1.5 mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900");
             }

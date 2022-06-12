@@ -18,4 +18,5 @@ https://georgeneves.github.io/weather-app/
 
 ## Contribution
 Made with ❤️ by George
+
 Special thanks to Anusha, Walter, Stephen, Zee, and Shane ❤️
